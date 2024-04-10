@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .task {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .task input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    .task input[type="text"] {
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+
+    .task button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>To-Do List</h1>
+    <div class="task">
+        <input type="checkbox">
+        <input type="text" value="Example Task 1">
+        <button>Delete</button>
+    </div>
+    <div class="task">
+        <input type="checkbox">
+        <input type="text" value="Example Task 2">
+        <button>Delete</button>
+    </div>
+    <div class="task">
+        <input type="checkbox">
+        <input type="text" placeholder="Add new task">
+        <button>Add</button>
+    </div>
+</div>
+</body>
+</html>
